@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Demo Form</h1>
+    </header>
+
+    <main>
+      <form action="/" method="get">
+        <section>
+          <h2>Parsonal Details:</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your Email</label>
+              <input type="email" name="user-email" id="useremail" />
+            </li>
+            <li>
+              <label for="userpassword">Your Password</label>
+              <input type="password" name="user-password" id="userpassword" />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Extra Details:</h2>
+          <ul>
+            <li>
+              <label for="useraddress">Your Address</label>
+              <textarea id="useraddress" name="user-address"></textarea>
+            </li>
+            <li>
+              <label for="userage">Your Age</label>
+              <input type="number" step="1" name="user-age" id="userage" />
+            </li>
+            <li>
+              <label for="userbirthdate">Your BirthDate</label>
+              <input type="date" name="user-birthdate" id="userbirthdate" />
+            </li>
+            <li>
+              <label for="bloodgroup">Select Blood Group</label>
+              <select name="blood-group" id="bloodgroup">
+                <option value="None">select</option>
+                <option value="O-neg">O-</option>
+                <option value="O-pos">O+</option>
+                <option value="A-neg">A-</option>
+                <option value="A-pos">A+</option>
+                <option value="B-neg">B-</option>
+                <option value="B-pos">B+</option>
+                <option value="AB-neg">AB-</option>
+                <option value="AB-pos">AB+</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Chose method to verify:</h2>
+          <ul>
+            <li class="btn-radio">
+              <input type="radio" name="verify" id="verify-text" value="text" />
+              <label for="verify-text">Via Text message</label>
+            </li>
+            <li class="btn-radio">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+              />
+              <label for="verify-phone">Via Phone Call</label>
+            </li>
+            <li class="btn-radio">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+              />
+              <label for="verify-email">Via Email</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Choose Contact Method:</h2>
+          <ul>
+            <li class="btn-radio">
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-email">Contact me via email</label>
+            </li>
+            <li class="btn-radio">
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-phone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section>
+          <ul>
+            <li class="btn-radio">
+              <input type="checkbox" id="agree-terms" name="terms" />
+              <label for="agree-terms">Agree to Terms</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
